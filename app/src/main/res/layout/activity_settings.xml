@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/settings_Image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/ic_person_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/settings_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="-50dp"
+        android:text="Owner's Name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="70dp"
+            app:srcCompat="@drawable/ic_camera_alt_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <Button
+            android:id="@+id/b_changeImage"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="-50dp"
+            android:text="Change Profile Image"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/ic_email_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <Button
+            android:id="@+id/b_changeEmail"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="-50dp"
+            android:text="Change E-mail Address"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/ic_vpn_key_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <Button
+            android:id="@+id/b_changePassword"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="-50dp"
+            android:text="Change Password"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/ic_exit_to_app_black_24dp" />
+
+        <Button
+            android:id="@+id/b_logout"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="-50dp"
+            android:text="LogOut from account"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.vaidyaabhijeet.drivesafe.OwnerMainPageTabbed">
+    <item
+        android:id="@+id/action_settings"
+        android:title="Settings" />
+    <item
+        android:id="@+id/action_history"
+        android:title="History" />
+    <item
+        android:id="@+id/action_statusChange"
+        android:title="Change User Status" />
+</menu>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="serif"
+        android:text="   User Sign-Up Page"
+        android:textAlignment="inherit"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/til_userName1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Name Here..."
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_userEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        app:errorEnabled="true"
+        android:layout_marginBottom="370dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/til_userEmail1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your E-mail Address Here..."
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_userPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-340dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:errorEnabled="true"
+        android:layout_marginRight="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/til_userPhone1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Owner's Phone Number Here..."
+            android:inputType="phone" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_VehNo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:errorEnabled="true"
+            app:counterEnabled="true"
+            app:counterMaxLength="10"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="-80dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/til_VehNo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Owner's Vehicle Number Here..." />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/b_userSubmit"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="90dp"
+        android:text="Submit" />
+
+        </LinearLayout>
+</ScrollView>
